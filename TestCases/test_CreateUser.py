@@ -13,8 +13,7 @@ url = "https://reqres.in/api/users"
 @pytest.fixture()
 def start_exec():
     global file
-    file = open('/Users/juan/Desktop/CreateUser.json', 'r')
-
+    file = open('C:/Users/Desktop/Desktop/Python/Requests/CreateUser.json', 'r')
 #@pytest.mark.skip("This is not valid for current build")
 #@pytest.mark.skipif(a>10, reason="Condition is not satisfied")
 def test_create_new_user(start_exec):

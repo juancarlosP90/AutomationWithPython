@@ -7,12 +7,12 @@ import openpyxl
 
 def test_add_multiple_students():
     API_URL = "https://thetestingworldapi.com/api/studentsDetails"
-    f = open('/Users/juan/Desktop/Python/requests/addNewStudent.json')
+    f = open('C:/Users/Desktop/Desktop/Python/Requests/addNewStudent.json')
     json_request = json.loads(f.read())
 
-    wb = openpyxl.load_workbook('/Users/juan/Desktop/Python/requests/testData.xlsx')
+    wb = openpyxl.load_workbook('C:/Users/Desktop/Desktop/Python/Requests/testData.xlsx')
 
-    sh = wb['Sheet1']
+    sh = wb['Hoja1']
     rows = sh.max_row
 
     for i in range (2, rows+1):

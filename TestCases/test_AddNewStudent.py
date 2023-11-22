@@ -5,14 +5,14 @@ import jsonpath
 
 def test_addStudentData():
     API_URL = "https://thetestingworldapi.com/api/studentsDetails"
-    f = open('/Users/juan/Desktop/Python/requests/postRequest.json', 'r')
+    f = open('C:/Users/Desktop/Desktop/Python/Requests/postRequest.json', 'r')
     json_request = json.loads(f.read())
     response = requests.post(API_URL, json_request)
     print(response.text)
 
 def test_updateStudentData():
     API_URL = "https://thetestingworldapi.com/api/studentsDetails/8441302"
-    f = open('/Users/juan/Desktop/Python/requests/postRequest.json', 'r')
+    f = open('C:/Users/Desktop/Desktop/Python/Requests/postRequest.json', 'r')
     json_request = json.loads(f.read())
     response = requests.put(API_URL, json_request)
     print(response.text)
