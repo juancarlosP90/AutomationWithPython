@@ -1,11 +1,11 @@
-import  requests
+import requests
 import json
 import jsonpath
 
 
 url = "https://reqres.in/api/users"
 
-file = open('/Users/juan/Desktop/CreateUser.json','r')
+file = open('C:/Users/Desktop/Desktop/Python/Requests/CreateUser.json','r')
 json_input = file.read()
 request_json = json.loads(json_input)
 
